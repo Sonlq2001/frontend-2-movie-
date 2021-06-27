@@ -1,0 +1,47 @@
+.header-movie {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3.5rem;
+
+	@include mobile-less {
+		margin-bottom: 0;
+	}
+
+	&__border {
+		width: 100%;
+		background-image: url("./../images/seperator-bg-2.png");
+		background-repeat: repeat-x;
+		background-position: center;
+	}
+
+	.border-left,
+	.border-right {
+		width: 100%;
+		background-image: url("./../images/seperator-bg.png");
+		background-repeat: repeat-x;
+		background-position: center;
+	}
+
+	&__title {
+		font: {
+			size: 3.5rem;
+			weight: 700;
+		}
+		margin: 0 2rem;
+		white-space: nowrap;
+
+		span {
+			color: $main-color;
+		}
+
+		@include tablet {
+			font-size: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+		}
+
+		@include mobile {
+			font-size: 2.5rem;
+		}
+	}
+}

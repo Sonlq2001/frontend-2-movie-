@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/grid.css" />
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<div class="group-header">
+			<div class="container">
+				<header class="header">
+					<div class="header-left">
+						<a href="" class="header-logo">
+							<img
+								src="./assets/images/logo.png"
+								alt=""
+								class="header-logo__img"
+							/>
+						</a>
+
+						<form class="form-search">
+							<div class="form-group">
+								<input
+									type="text"
+									class="input-field"
+									placeholder="Movie search"
+								/>
+							</div>
+							<button class="btn-search-main">go</button>
+						</form>
+					</div>
+
+					<nav class="header-right">
+						<ul class="list-nav">
+							<li class="list-nav__item">
+								<a href="index.html" class="item-link">home</a>
+								<ul class="nav-sub">
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="list-nav__item">
+								<a href="list-movie.html" class="item-link"
+									>movie</a
+								>
+							</li>
+							<li class="list-nav__item">
+								<a href="detail.html" class="item-link"
+									>tv show</a
+								>
+							</li>
+							<li class="list-nav__item">
+								<a href="actor.html" class="item-link"
+									>single</a
+								>
+								<ul class="nav-sub">
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>movie</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>tv show</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>actor</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="list-nav__item">
+								<a href="" class="item-link">top rated</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- nav mobile -->
+					<div class="group-mobile lg-0">
+						<label for="check-mobile" class="bar-mobile"
+							><i class="fas fa-hamburger"></i
+						></label>
+						<input type="checkbox" id="check-mobile" hidden />
+						<label for="check-mobile" class="overlay"></label>
+
+						<nav>
+							<div class="nav-header">
+								<img
+									src="./assets/images/icon-popcorn.png"
+									alt=""
+									class="nav-header__img"
+								/>
+								<label
+									for="check-mobile"
+									class="nav-header__close"
+									>&#10005;</label
+								>
+							</div>
+							<ul class="nav-mobile">
+								<li class="nav-mobile__item">
+									<div class="">
+										<a href="#" class="nav-mobile-link"
+											>sonel</a
+										>
+										<i
+											class="
+												accordion-nav
+												minus
+												fas
+												fa-minus
+											"
+										></i>
+										<i
+											class="
+												accordion-nav
+												plus
+												fas
+												fa-plus
+											"
+										></i>
+									</div>
+
+									<!-- sub nav mobile -->
+									<ul class="sub-mobile">
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-mobile__item">
+									<div class="">
+										<a href="#" class="nav-mobile-link"
+											>le quang son</a
+										>
+										<i
+											class="
+												accordion-nav
+												minus
+												fas
+												fa-minus
+											"
+										></i>
+										<i
+											class="
+												accordion-nav
+												plus
+												fas
+												fa-plus
+											"
+										></i>
+									</div>
+
+									<!-- sub nav mobile -->
+									<ul class="sub-mobile">
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<!-- main -->
+		<div class="main">
+			<div class="actor">
+				<div class="banner-actor">
+					<img
+						src="./assets/images/banner-actor-1.jpg"
+						alt=""
+						class="banner-actor__img"
+					/>
+				</div>
+
+				<div class="profile">
+					<div class="container">
+						<div class="row">
+							<div class="xl-3 lg-3 md-3 sm-12 col-12">
+								<div class="profile-actor">
+									<img
+										src="./assets/images/actor.jpg"
+										alt=""
+										class="profile-actor__avatar"
+									/>
+
+									<div class="profile-group">
+										<div class="profile-detail md-0 lg-0">
+											<span class="profile-detail__label"
+												>Name:
+											</span>
+											<span
+												class="profile-detail__content"
+											>
+												ALEXANDER CATTLY</span
+											>
+										</div>
+										<div class="profile-detail">
+											<span class="profile-detail__label"
+												>Birth Day:
+											</span>
+											<span
+												class="profile-detail__content"
+											>
+												20/12/2019</span
+											>
+										</div>
+										<div class="profile-detail">
+											<span class="profile-detail__label"
+												>Birth Place:
+											</span>
+											<span
+												class="profile-detail__content"
+												>New York</span
+											>
+										</div>
+										<div class="profile-detail">
+											<span class="profile-detail__label"
+												>Gender:
+											</span>
+											<span
+												class="profile-detail__content"
+												>Male</span
+											>
+										</div>
+										<div class="profile-detail">
+											<span class="profile-detail__label"
+												>Nationality:
+											</span>
+											<span
+												class="profile-detail__content"
+												>Us</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="xl-9 lg-9 md-9 sm-12 col-12">
+								<div class="info-actor">
+									<h1 class="info-actor__name">
+										ALEXANDER CATTLY
+									</h1>
+									<ul class="actor-list">
+										<li class="actor-list__item">
+											Lorem ipsum dolor sit amet,
+											consectetur adipiscing elit
+										</li>
+										<li class="actor-list__item">
+											Ut enim ad minim veniam, quis
+											nostrud exercitation ullamco laboris
+											nisi ut aliquip ex ea commodo
+											consequat
+										</li>
+										<li class="actor-list__item">
+											Ut enim ad minim veniam, quis
+											nostrud exercitation ullamco laboris
+											nisi ut aliquip ex ea commodo
+											consequat.
+										</li>
+									</ul>
+
+									<div class="actor-biography">
+										<h1 class="info-title">Biography</h1>
+										<p class="actor-biography__des">
+											Lorem ipsum dolor sit amet,
+											consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore
+											et dolore magna aliqua. Ut enim ad
+											minim veniam, quis nostrud
+											exercitation ullamco laboris nisi ut
+											aliquip ex ea commodo consequat.
+											Duis aute irure dolor in
+											reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla
+											pariatur. Excepteur sint occaecat
+											cupidatat non proident, sunt in
+											culpa qui officia deserunt mollit
+											anim id est laborum. Sed ut
+											perspiciatis unde omnis iste natus
+											error sit voluptatem accusantium
+											doloremque laudantium, totam rem
+											aperiam, eaque ipsa quae ab illo
+											inventore veritatis et quasi
+											architecto beatae vitae dicta sunt
+											explicabo. Nemo enim ipsam
+											voluptatem quia voluptas sit
+											aspernatur aut odit aut fugit, sed
+											quia consequuntur magni dolores eos
+											qui ratione voluptatem sequi
+											nesciunt. Neque porro quisquam est,
+											qui dolorem ipsum quia dolor sit
+											amet, consectetur, adipisci velit,
+											sed quia non numquam eius modi
+											tempora incidunt ut labore et dolore
+											magnam aliquam quaerat voluptatem.
+											Ut enim ad minima veniam, quis
+											nostrum exercitationem ullam
+											corporis suscipit laboriosam, nisi
+											ut aliquid ex ea commodi
+											consequatur? Quis autem vel eum iure
+											reprehenderit qui in ea voluptate
+											velit esse quam nihil molestiae
+											consequatur, vel illum qui dolorem
+											eum fugiat quo voluptas nulla
+											pariatur?
+										</p>
+									</div>
+
+									<div class="actor-movie">
+										<h1 class="info-title">Filmography</h1>
+
+										<div class="actor-movie-list">
+											<div class="table-header">
+												<span class="movie-list__name">
+													Movie Name</span
+												>
+												<span class="movie-list__time">
+													Release Date</span
+												>
+											</div>
+											<div class="table-body">
+												<div class="filmography">
+													<div
+														class="filmography-left"
+													>
+														<img
+															src="http://demo.amytheme.com/movie/demo/movie-news/wp-content/uploads/2019/04/img_20-1-150x150.jpg"
+															alt=""
+															class="
+																filmography-left__img
+															"
+														/>
+														<a href=""
+															>The Hurricane
+															Heist</a
+														>
+													</div>
+													<div
+														class="
+															filmography-right
+														"
+													>
+														May 6, 2017
+													</div>
+												</div>
+												<div class="filmography">
+													<div
+														class="filmography-left"
+													>
+														<img
+															src="http://demo.amytheme.com/movie/demo/movie-news/wp-content/uploads/2019/04/img_19-1-150x150.jpg"
+															alt=""
+															class="
+																filmography-left__img
+															"
+														/>
+														<a href=""
+															>The Hurricane
+															Heist</a
+														>
+													</div>
+													<div
+														class="
+															filmography-right
+														"
+													>
+														May 6, 2017
+													</div>
+												</div>
+												<div class="filmography">
+													<div
+														class="filmography-left"
+													>
+														<img
+															src="http://demo.amytheme.com/movie/demo/movie-news/wp-content/uploads/2019/04/img_2-1-150x150.jpg"
+															alt=""
+															class="
+																filmography-left__img
+															"
+														/>
+														<a href=""
+															>The Hurricane
+															Heist</a
+														>
+													</div>
+													<div
+														class="
+															filmography-right
+														"
+													>
+														May 6, 2017
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<ul class="paginate-movie">
+											<li class="paginate-movie__item">
+												<a href="" class="active">1</a>
+											</li>
+											<li class="paginate-movie__item">
+												<a href="">2</a>
+											</li>
+											<li class="paginate-movie__item">
+												<a href="">Next</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="bg-footer">
+				<div class="container">
+					<div class="row-footer">
+						<div class="row">
+							<div class="xl-3 lg-3 md-12 sm-12 col-12">
+								<div class="box-footer">
+									<img
+										src="./assets/images/logo-white.png"
+										alt=""
+										class="box-footer__logo"
+									/>
+									<p class="box-footer__des">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea commodo consequat
+									</p>
+
+									<ul class="social-footer">
+										<li class="social-item">
+											<a
+												href=""
+												class="social-item__link"
+											>
+												<i
+													class="fab fa-facebook-f"
+												></i>
+											</a>
+										</li>
+										<li class="social-item">
+											<a
+												href=""
+												class="social-item__link"
+											>
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="xl-3 lg-3 md-0 sm-0 col-0"></div>
+							<div class="xl-3 lg-3 md-6 sm-6 col-12">
+								<div class="footer-info">
+									<h2 class="footer-info__title">
+										Recent Posts
+									</h2>
+
+									<div class="footer-info-top">
+										<a href="" class="footer-info__link"
+											>Doctor Strange assembles with the
+											Avengers</a
+										>
+										<div class="footer-info__time">
+											April 3, 2019
+										</div>
+									</div>
+									<div class="footer-info-bottom">
+										<a href="" class="footer-info__link"
+											>5 movies to watch this week (29 Sep
+											2016)</a
+										>
+										<div class="footer-info__time">
+											April 3, 2019
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="xl-3 lg-3 md-6 sm-6 col-12">
+								<div class="footer-info">
+									<h2 class="footer-info__title">
+										Contact Us
+									</h2>
+									<div class="footer-info__contact">
+										<i class="fas fa-location-arrow"></i>
+										9067 Zurich, Switzerland 87
+									</div>
+									<div class="footer-info__contact">
+										<i class="far fa-envelope"></i>
+										abc@gmail.com
+									</div>
+									<div class="footer-info__contact">
+										<i class="fas fa-phone-alt"></i>
+										<span>039-457-0202</span>
+									</div>
+
+									<form action="" class="form-contact">
+										<div class="group-contact">
+											<input
+												type="text"
+												class="group-contact__input"
+												placeholder="Email"
+											/>
+											<button>
+												<i
+													class="far fa-paper-plane"
+												></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="end-footer">
+				<div class="container">
+					<div class="end-footer-group">
+						<span> ©copyright 2016 Movie </span>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Top rated</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="./assets/js/main.js"></script>
+</html>

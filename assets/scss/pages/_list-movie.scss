@@ -1,0 +1,47 @@
+.banner-page {
+	@include box(100%, 21rem);
+	background-color: black;
+	color: $white-color;
+	margin-bottom: 4rem;
+
+	.container {
+		height: 100%;
+		.banner-content {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include mobile {
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			&__title {
+				font-size: 3.5rem;
+
+				@include mobile {
+					line-height: 3rem;
+					font-size: 3rem;
+				}
+			}
+
+			.breadcrumb {
+				font-size: 1.3rem;
+				margin-top: 4rem;
+				a {
+					color: $white-color;
+				}
+
+				&__separate {
+					display: inline-block;
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+}
+
+.list-movie {
+	margin-bottom: 5rem;
+}

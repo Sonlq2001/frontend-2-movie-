@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/grid.css" />
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<div class="group-header">
+			<div class="container">
+				<header class="header">
+					<div class="header-left">
+						<a href="" class="header-logo">
+							<img
+								src="./assets/images/logo.png"
+								alt=""
+								class="header-logo__img"
+							/>
+						</a>
+
+						<form class="form-search">
+							<div class="form-group">
+								<input
+									type="text"
+									class="input-field"
+									placeholder="Movie search"
+								/>
+							</div>
+							<button class="btn-search-main">go</button>
+						</form>
+					</div>
+
+					<nav class="header-right">
+						<ul class="list-nav">
+							<li class="list-nav__item">
+								<a href="index.html" class="item-link">home</a>
+								<ul class="nav-sub">
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>home single cinema</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="list-nav__item">
+								<a href="list-movie.html" class="item-link"
+									>movie</a
+								>
+							</li>
+							<li class="list-nav__item">
+								<a href="detail.html" class="item-link"
+									>tv show</a
+								>
+							</li>
+							<li class="list-nav__item">
+								<a href="actor.html" class="item-link"
+									>single</a
+								>
+								<ul class="nav-sub">
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>movie</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>tv show</a
+										>
+									</li>
+									<li class="nav-sub__item">
+										<a href="" class="nav-sub__item-link"
+											>actor</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="list-nav__item">
+								<a href="" class="item-link">top rated</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- nav mobile -->
+					<div class="group-mobile lg-0">
+						<label for="check-mobile" class="bar-mobile"
+							><i class="fas fa-hamburger"></i
+						></label>
+						<input type="checkbox" id="check-mobile" hidden />
+						<label for="check-mobile" class="overlay"></label>
+
+						<nav>
+							<div class="nav-header">
+								<img
+									src="./assets/images/icon-popcorn.png"
+									alt=""
+									class="nav-header__img"
+								/>
+								<label
+									for="check-mobile"
+									class="nav-header__close"
+									>&#10005;</label
+								>
+							</div>
+							<ul class="nav-mobile">
+								<li class="nav-mobile__item">
+									<div class="">
+										<a href="#" class="nav-mobile-link"
+											>sonel</a
+										>
+										<i
+											class="
+												accordion-nav
+												minus
+												fas
+												fa-minus
+											"
+										></i>
+										<i
+											class="
+												accordion-nav
+												plus
+												fas
+												fa-plus
+											"
+										></i>
+									</div>
+
+									<!-- sub nav mobile -->
+									<ul class="sub-mobile">
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 1</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-mobile__item">
+									<div class="">
+										<a href="#" class="nav-mobile-link"
+											>le quang son</a
+										>
+										<i
+											class="
+												accordion-nav
+												minus
+												fas
+												fa-minus
+											"
+										></i>
+										<i
+											class="
+												accordion-nav
+												plus
+												fas
+												fa-plus
+											"
+										></i>
+									</div>
+
+									<!-- sub nav mobile -->
+									<ul class="sub-mobile">
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+										<li class="sub-mobile__item">
+											<a href="">con 2</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<!-- slide -->
+		<div class="main-slide">
+			<div class="group-slide">
+				<div class="slide-content">
+					<img
+						src="./assets/images/slide1.jpg"
+						alt=""
+						class="group-slide__img"
+					/>
+					<div class="slide-title">
+						<a href="" class="slide-title__name">
+							<span>game</span> night</a
+						>
+						<p class="slide-title__des">
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Quia vitae perspiciatis harum. Accusamus
+							fugiat dolore nisi quae inventore mollitia nesciunt
+							aut!
+						</p>
+					</div>
+				</div>
+				<div class="slide-content">
+					<img
+						src="./assets/images/slide2.jpg"
+						alt=""
+						class="group-slide__img"
+					/>
+					<div class="slide-title">
+						<a href="" class="slide-title__name">
+							<span>game</span> son</a
+						>
+						<p class="slide-title__des">
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Quia vitae perspiciatis harum. Accusamus
+							fugiat dolore nisi quae inventore mollitia nesciunt
+							aut!
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-control">
+				<i
+					onclick="btnChangeSlide(-1)"
+					class="slide-control__prev icon-slide fas fa-chevron-left"
+				></i>
+				<i
+					onclick="btnChangeSlide(1)"
+					class="slide-control__next icon-slide fas fa-chevron-right"
+				></i>
+			</div>
+
+			<ul class="slide-position">
+				<li class="slide-position__item active">1</li>
+				<li class="slide-position__item">2</li>
+			</ul>
+		</div>
+
+		<!-- main -->
+		<div class="main">
+			<!-- Newest Movie -->
+			<div class="container">
+				<div class="header-movie">
+					<div class="header-movie__border"></div>
+					<h2 class="header-movie__title">
+						Newest <span>Movie</span>
+					</h2>
+					<div class="header-movie__border"></div>
+				</div>
+				<div class="row-movie">
+					<div class="row">
+						<div class="xl-2-5 lg-2-5 md-4 sm-6 col-6">
+							<div class="movie-new">
+								<a href="detail.html" class="movie-new-header">
+									<img
+										src="./assets/images/movie1.jpg"
+										alt=""
+										class="movie-new-header__img"
+									/>
+									<div class="movie-new-header__point">
+										7.9
+									</div>
+									<i
+										class="
+											movie-new-header__play
+											fas
+											fa-play-circle
+										"
+									></i>
+
+									<!-- info detail movie -->
+									<div class="info-movie">
+										<div class="info-movie-header">
+											<h4
+												class="info-movie-header__title"
+											>
+												Supersonic
+											</h4>
+											<div class="info-movie-vote">
+												<div
+													class="
+														info-movie-vote__star
+													"
+												>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+												</div>
+												<div
+													class="
+														info-movie-vote__total
+													"
+												>
+													(53 votes)
+												</div>
+											</div>
+
+											<div
+												class="info-movie-header__time"
+											>
+												<i class="far fa-clock"></i>
+												02 hours 50 minutes
+											</div>
+										</div>
+
+										<div class="info-movie-body">
+											<p class="info-movie-body__des">
+												Sed ut perspiciatis unde omnis
+												iste natus error sit voluptatem
+												accusantium doloremque
+												laudantium, totam rem aperiam,
+												...
+											</p>
+
+											<div class="info-common">
+												<span class="info-common__title"
+													>Release Date:</span
+												>
+												<span
+													class="info-common__content"
+													>July 27, 2017</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Genre:</span
+												>
+												<span
+													class="info-common__content"
+													>Cartoon, Cartoon/
+													Animation, Comedy,
+													Drama</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Actor:</span
+												>
+												<span
+													class="info-common__content"
+													>Alexander Cattly, Greta
+													Garbo</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Director:</span
+												>
+												<span
+													class="info-common__content"
+													>Grace Belly</span
+												>
+											</div>
+										</div>
+
+										<div class="info-movie-footer">
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-play-circle"
+												></i>
+												Trailer
+											</div>
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-info-circle"
+												></i>
+												Detail
+											</div>
+										</div>
+
+										<div
+											class="
+												movie-new-header__point
+												point-info
+											"
+										>
+											7.9
+										</div>
+									</div>
+								</a>
+
+								<div class="movie-new-body">
+									<h3 class="movie-new-body__title">
+										Supersonic
+									</h3>
+									<span class="movie-new-body__time"
+										>February 24, 2017
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="xl-2-5 lg-2-5 md-4 sm-6 col-6">
+							<div class="movie-new">
+								<a href="detail.html" class="movie-new-header">
+									<img
+										src="./assets/images/movie3.jpg"
+										alt=""
+										class="movie-new-header__img"
+									/>
+									<div class="movie-new-header__point">
+										7.9
+									</div>
+									<i
+										class="
+											movie-new-header__play
+											fas
+											fa-play-circle
+										"
+									></i>
+
+									<!-- info detail movie -->
+									<div class="info-movie">
+										<div class="info-movie-header">
+											<h4
+												class="info-movie-header__title"
+											>
+												Supersonic
+											</h4>
+											<div class="info-movie-vote">
+												<div
+													class="
+														info-movie-vote__star
+													"
+												>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+												</div>
+												<div
+													class="
+														info-movie-vote__total
+													"
+												>
+													(53 votes)
+												</div>
+											</div>
+
+											<div
+												class="info-movie-header__time"
+											>
+												<i class="far fa-clock"></i>
+												02 hours 50 minutes
+											</div>
+										</div>
+
+										<div class="info-movie-body">
+											<p class="info-movie-body__des">
+												Sed ut perspiciatis unde omnis
+												iste natus error sit voluptatem
+												accusantium doloremque
+												laudantium, totam rem aperiam,
+												...
+											</p>
+
+											<div class="info-common">
+												<span class="info-common__title"
+													>Release Date:</span
+												>
+												<span
+													class="info-common__content"
+													>July 27, 2017</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Genre:</span
+												>
+												<span
+													class="info-common__content"
+													>Cartoon, Cartoon/
+													Animation, Comedy,
+													Drama</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Actor:</span
+												>
+												<span
+													class="info-common__content"
+													>Alexander Cattly, Greta
+													Garbo</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Director:</span
+												>
+												<span
+													class="info-common__content"
+													>Grace Belly</span
+												>
+											</div>
+										</div>
+
+										<div class="info-movie-footer">
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-play-circle"
+												></i>
+												Trailer
+											</div>
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-info-circle"
+												></i>
+												Detail
+											</div>
+										</div>
+
+										<div
+											class="
+												movie-new-header__point
+												point-info
+											"
+										>
+											7.9
+										</div>
+									</div>
+								</a>
+
+								<div class="movie-new-body">
+									<h3 class="movie-new-body__title">
+										Supersonic
+									</h3>
+									<span class="movie-new-body__time"
+										>February 24, 2017
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="xl-2-5 lg-2-5 md-4 sm-6 col-6">
+							<div class="movie-new">
+								<a href="detail.html" class="movie-new-header">
+									<img
+										src="./assets/images/movie2.jpg"
+										alt=""
+										class="movie-new-header__img"
+									/>
+									<div class="movie-new-header__point">
+										7.9
+									</div>
+									<i
+										class="
+											movie-new-header__play
+											fas
+											fa-play-circle
+										"
+									></i>
+
+									<!-- info detail movie -->
+									<div class="info-movie">
+										<div class="info-movie-header">
+											<h4
+												class="info-movie-header__title"
+											>
+												Supersonic
+											</h4>
+											<div class="info-movie-vote">
+												<div
+													class="
+														info-movie-vote__star
+													"
+												>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+												</div>
+												<div
+													class="
+														info-movie-vote__total
+													"
+												>
+													(53 votes)
+												</div>
+											</div>
+
+											<div
+												class="info-movie-header__time"
+											>
+												<i class="far fa-clock"></i>
+												02 hours 50 minutes
+											</div>
+										</div>
+
+										<div class="info-movie-body">
+											<p class="info-movie-body__des">
+												Sed ut perspiciatis unde omnis
+												iste natus error sit voluptatem
+												accusantium doloremque
+												laudantium, totam rem aperiam,
+												...
+											</p>
+
+											<div class="info-common">
+												<span class="info-common__title"
+													>Release Date:</span
+												>
+												<span
+													class="info-common__content"
+													>July 27, 2017</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Genre:</span
+												>
+												<span
+													class="info-common__content"
+													>Cartoon, Cartoon/
+													Animation, Comedy,
+													Drama</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Actor:</span
+												>
+												<span
+													class="info-common__content"
+													>Alexander Cattly, Greta
+													Garbo</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Director:</span
+												>
+												<span
+													class="info-common__content"
+													>Grace Belly</span
+												>
+											</div>
+										</div>
+
+										<div class="info-movie-footer">
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-play-circle"
+												></i>
+												Trailer
+											</div>
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-info-circle"
+												></i>
+												Detail
+											</div>
+										</div>
+
+										<div
+											class="
+												movie-new-header__point
+												point-info
+											"
+										>
+											7.9
+										</div>
+									</div>
+								</a>
+
+								<div class="movie-new-body">
+									<h3 class="movie-new-body__title">
+										Supersonic
+									</h3>
+									<span class="movie-new-body__time"
+										>February 24, 2017
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="xl-2-5 lg-2-5 md-4 sm-6 col-6">
+							<div class="movie-new">
+								<a href="detail.html" class="movie-new-header">
+									<img
+										src="./assets/images/movie4.jpg"
+										alt=""
+										class="movie-new-header__img"
+									/>
+									<div class="movie-new-header__point">
+										7.9
+									</div>
+									<i
+										class="
+											movie-new-header__play
+											fas
+											fa-play-circle
+										"
+									></i>
+
+									<!-- info detail movie -->
+									<div class="info-movie">
+										<div class="info-movie-header">
+											<h4
+												class="info-movie-header__title"
+											>
+												Supersonic
+											</h4>
+											<div class="info-movie-vote">
+												<div
+													class="
+														info-movie-vote__star
+													"
+												>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+												</div>
+												<div
+													class="
+														info-movie-vote__total
+													"
+												>
+													(53 votes)
+												</div>
+											</div>
+
+											<div
+												class="info-movie-header__time"
+											>
+												<i class="far fa-clock"></i>
+												02 hours 50 minutes
+											</div>
+										</div>
+
+										<div class="info-movie-body">
+											<p class="info-movie-body__des">
+												Sed ut perspiciatis unde omnis
+												iste natus error sit voluptatem
+												accusantium doloremque
+												laudantium, totam rem aperiam,
+												...
+											</p>
+
+											<div class="info-common">
+												<span class="info-common__title"
+													>Release Date:</span
+												>
+												<span
+													class="info-common__content"
+													>July 27, 2017</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Genre:</span
+												>
+												<span
+													class="info-common__content"
+													>Cartoon, Cartoon/
+													Animation, Comedy,
+													Drama</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Actor:</span
+												>
+												<span
+													class="info-common__content"
+													>Alexander Cattly, Greta
+													Garbo</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Director:</span
+												>
+												<span
+													class="info-common__content"
+													>Grace Belly</span
+												>
+											</div>
+										</div>
+
+										<div class="info-movie-footer">
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-play-circle"
+												></i>
+												Trailer
+											</div>
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-info-circle"
+												></i>
+												Detail
+											</div>
+										</div>
+
+										<div
+											class="
+												movie-new-header__point
+												point-info
+											"
+										>
+											7.9
+										</div>
+									</div>
+								</a>
+
+								<div class="movie-new-body">
+									<h3 class="movie-new-body__title">
+										Supersonic
+									</h3>
+									<span class="movie-new-body__time"
+										>February 24, 2017
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="xl-2-5 lg-2-5 md-4 sm-0 col-0">
+							<div class="movie-new">
+								<a href="detail.html" class="movie-new-header">
+									<img
+										src="./assets/images/movie5.jpg"
+										alt=""
+										class="movie-new-header__img"
+									/>
+									<div class="movie-new-header__point">
+										7.9
+									</div>
+									<i
+										class="
+											movie-new-header__play
+											fas
+											fa-play-circle
+										"
+									></i>
+
+									<!-- info detail movie -->
+									<div class="info-movie">
+										<div class="info-movie-header">
+											<h4
+												class="info-movie-header__title"
+											>
+												Supersonic
+											</h4>
+											<div class="info-movie-vote">
+												<div
+													class="
+														info-movie-vote__star
+													"
+												>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+													<i
+														class="
+															icon-vote
+															fas
+															fa-star
+														"
+													></i>
+												</div>
+												<div
+													class="
+														info-movie-vote__total
+													"
+												>
+													(53 votes)
+												</div>
+											</div>
+
+											<div
+												class="info-movie-header__time"
+											>
+												<i class="far fa-clock"></i>
+												02 hours 50 minutes
+											</div>
+										</div>
+
+										<div class="info-movie-body">
+											<p class="info-movie-body__des">
+												Sed ut perspiciatis unde omnis
+												iste natus error sit voluptatem
+												accusantium doloremque
+												laudantium, totam rem aperiam,
+												...
+											</p>
+
+											<div class="info-common">
+												<span class="info-common__title"
+													>Release Date:</span
+												>
+												<span
+													class="info-common__content"
+													>July 27, 2017</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Genre:</span
+												>
+												<span
+													class="info-common__content"
+													>Cartoon, Cartoon/
+													Animation, Comedy,
+													Drama</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Actor:</span
+												>
+												<span
+													class="info-common__content"
+													>Alexander Cattly, Greta
+													Garbo</span
+												>
+											</div>
+											<div class="info-common">
+												<span class="info-common__title"
+													>Director:</span
+												>
+												<span
+													class="info-common__content"
+													>Grace Belly</span
+												>
+											</div>
+										</div>
+
+										<div class="info-movie-footer">
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-play-circle"
+												></i>
+												Trailer
+											</div>
+											<div
+												class="info-movie-footer__link"
+											>
+												<i
+													class="fas fa-info-circle"
+												></i>
+												Detail
+											</div>
+										</div>
+
+										<div
+											class="
+												movie-new-header__point
+												point-info
+											"
+										>
+											7.9
+										</div>
+									</div>
+								</a>
+
+								<div class="movie-new-body">
+									<h3 class="movie-new-body__title">
+										Supersonic
+									</h3>
+									<span class="movie-new-body__time"
+										>February 24, 2017
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tv Show Hot -->
+			<div class="">
+				<div class="header-movie">
+					<div class="border-left"></div>
+					<h2 class="header-movie__title">
+						Tv Show <span>Hot</span>
+					</h2>
+					<div class="border-right"></div>
+				</div>
+				<div class="container">
+					<div class="row-movie-hot">
+						<div class="row">
+							<div class="xl-6 lg-6 md-12 sm-12 col-12">
+								<div class="movie-hot">
+									<div
+										class="
+											movie-new-header movie-hot-header
+										"
+									>
+										<div class="movie-hot-header__left">
+											<img
+												src="./assets/images/movie-hot1.jpg"
+												alt=""
+												class="
+													movie-new-header__img
+													img-movie-hot
+												"
+											/>
+											<div
+												class="
+													movie-new-header__point
+													point-info
+												"
+											>
+												7.9
+											</div>
+
+											<i
+												class="
+													play-movie-hot
+													fas
+													fa-play-circle
+												"
+											></i>
+										</div>
+										<!-- info detail movie -->
+										<div class="info-movie info-movie-hot">
+											<div class="info-movie-header">
+												<h4
+													class="
+														info-movie-header__title
+													"
+												>
+													Supersonic
+												</h4>
+												<div class="info-movie-vote">
+													<div
+														class="
+															info-movie-vote__star
+														"
+													>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+													</div>
+													<div
+														class="
+															info-movie-vote__total
+														"
+													>
+														(53 votes)
+													</div>
+												</div>
+
+												<div
+													class="
+														info-movie-header__time
+													"
+												>
+													<i class="far fa-clock"></i>
+													02 hours 50 minutes
+												</div>
+											</div>
+
+											<div class="info-movie-body">
+												<p class="info-movie-body__des">
+													Sed ut perspiciatis unde
+													omnis iste natus error sit
+													voluptatem accusantium
+													doloremque laudantium, totam
+													rem aperiam, ...
+												</p>
+
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Release Date:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>July 27, 2017</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Genre:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Cartoon, Cartoon/
+														Animation, Comedy,
+														Drama</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Actor:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Alexander Cattly, Greta
+														Garbo</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Director:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Grace Belly</span
+													>
+												</div>
+											</div>
+
+											<div class="info-movie-footer">
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-play-circle
+														"
+													></i>
+													Trailer
+												</div>
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-info-circle
+														"
+													></i>
+													Detail
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="xl-6 lg-6 md-12 sm-12 col-12">
+								<div class="movie-hot">
+									<div
+										class="
+											movie-new-header movie-hot-header
+										"
+									>
+										<div class="movie-hot-header__left">
+											<img
+												src="./assets/images/movie-hot2.jpg"
+												alt=""
+												class="
+													movie-new-header__img
+													img-movie-hot
+												"
+											/>
+											<div
+												class="
+													movie-new-header__point
+													point-info
+												"
+											>
+												7.9
+											</div>
+
+											<i
+												class="
+													play-movie-hot
+													fas
+													fa-play-circle
+												"
+											></i>
+										</div>
+										<!-- info detail movie -->
+										<div class="info-movie info-movie-hot">
+											<div class="info-movie-header">
+												<h4
+													class="
+														info-movie-header__title
+													"
+												>
+													Supersonic
+												</h4>
+												<div class="info-movie-vote">
+													<div
+														class="
+															info-movie-vote__star
+														"
+													>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+													</div>
+													<div
+														class="
+															info-movie-vote__total
+														"
+													>
+														(53 votes)
+													</div>
+												</div>
+
+												<div
+													class="
+														info-movie-header__time
+													"
+												>
+													<i class="far fa-clock"></i>
+													02 hours 50 minutes
+												</div>
+											</div>
+
+											<div class="info-movie-body">
+												<p class="info-movie-body__des">
+													Sed ut perspiciatis unde
+													omnis iste natus error sit
+													voluptatem accusantium
+													doloremque laudantium, totam
+													rem aperiam, ...
+												</p>
+
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Release Date:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>July 27, 2017</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Genre:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Cartoon, Cartoon/
+														Animation, Comedy,
+														Drama</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Actor:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Alexander Cattly, Greta
+														Garbo</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Director:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Grace Belly</span
+													>
+												</div>
+											</div>
+
+											<div class="info-movie-footer">
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-play-circle
+														"
+													></i>
+													Trailer
+												</div>
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-info-circle
+														"
+													></i>
+													Detail
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="xl-6 lg-6 md-12 sm-12 col-12">
+								<div class="movie-hot">
+									<div
+										class="
+											movie-new-header movie-hot-header
+										"
+									>
+										<div class="movie-hot-header__left">
+											<img
+												src="./assets/images/movie-hot3.jpg"
+												alt=""
+												class="
+													movie-new-header__img
+													img-movie-hot
+												"
+											/>
+											<div
+												class="
+													movie-new-header__point
+													point-info
+												"
+											>
+												7.9
+											</div>
+
+											<i
+												class="
+													play-movie-hot
+													fas
+													fa-play-circle
+												"
+											></i>
+										</div>
+										<!-- info detail movie -->
+										<div class="info-movie info-movie-hot">
+											<div class="info-movie-header">
+												<h4
+													class="
+														info-movie-header__title
+													"
+												>
+													Vikings
+												</h4>
+												<div class="info-movie-vote">
+													<div
+														class="
+															info-movie-vote__star
+														"
+													>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+													</div>
+													<div
+														class="
+															info-movie-vote__total
+														"
+													>
+														(30 votes)
+													</div>
+												</div>
+
+												<div
+													class="
+														info-movie-header__time
+													"
+												>
+													<i class="far fa-clock"></i>
+													02 hours 50 minutes
+												</div>
+											</div>
+
+											<div class="info-movie-body">
+												<p class="info-movie-body__des">
+													Sed ut perspiciatis unde
+													omnis iste natus error sit
+													voluptatem accusantium
+													doloremque laudantium, totam
+													rem aperiam, ...
+												</p>
+
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Release Date:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>July 27, 2017</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Genre:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Cartoon, Cartoon/
+														Animation, Comedy,
+														Drama</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Actor:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Alexander Cattly, Greta
+														Garbo</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Director:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Grace Belly</span
+													>
+												</div>
+											</div>
+
+											<div class="info-movie-footer">
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-play-circle
+														"
+													></i>
+													Trailer
+												</div>
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-info-circle
+														"
+													></i>
+													Detail
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="xl-6 lg-6 md-12 sm-12 col-12">
+								<div class="movie-hot">
+									<div
+										class="
+											movie-new-header movie-hot-header
+										"
+									>
+										<div class="movie-hot-header__left">
+											<img
+												src="./assets/images/movie-hot4.jpg"
+												alt=""
+												class="
+													movie-new-header__img
+													img-movie-hot
+												"
+											/>
+											<div
+												class="
+													movie-new-header__point
+													point-info
+												"
+											>
+												7.9
+											</div>
+
+											<i
+												class="
+													play-movie-hot
+													fas
+													fa-play-circle
+												"
+											></i>
+										</div>
+										<!-- info detail movie -->
+										<div class="info-movie info-movie-hot">
+											<div class="info-movie-header">
+												<h4
+													class="
+														info-movie-header__title
+													"
+												>
+													Prison Break
+												</h4>
+												<div class="info-movie-vote">
+													<div
+														class="
+															info-movie-vote__star
+														"
+													>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+														<i
+															class="
+																icon-vote
+																fas
+																fa-star
+															"
+														></i>
+													</div>
+													<div
+														class="
+															info-movie-vote__total
+														"
+													>
+														(13 votes)
+													</div>
+												</div>
+
+												<div
+													class="
+														info-movie-header__time
+													"
+												>
+													<i class="far fa-clock"></i>
+													02 hours 50 minutes
+												</div>
+											</div>
+
+											<div class="info-movie-body">
+												<p class="info-movie-body__des">
+													Sed ut perspiciatis unde
+													omnis iste natus error sit
+													voluptatem accusantium
+													doloremque laudantium, totam
+													rem aperiam, ...
+												</p>
+
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Release Date:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>July 27, 2017</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Genre:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Cartoon, Cartoon/
+														Animation, Comedy,
+														Drama</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Actor:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Alexander Cattly, Greta
+														Garbo</span
+													>
+												</div>
+												<div class="info-common">
+													<span
+														class="
+															info-common__title
+														"
+														>Director:</span
+													>
+													<span
+														class="
+															info-common__content
+														"
+														>Grace Belly</span
+													>
+												</div>
+											</div>
+
+											<div class="info-movie-footer">
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-play-circle
+														"
+													></i>
+													Trailer
+												</div>
+												<div
+													class="
+														info-movie-footer__link
+													"
+												>
+													<i
+														class="
+															fas
+															fa-info-circle
+														"
+													></i>
+													Detail
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- rating movie  -->
+			<div class="rating">
+				<div class="rating-bg">
+					<div class="gradient-movie">
+						<div class="container">
+							<div class="row-rating">
+								<div class="row">
+									<div class="xl-4 lg-5 md-12 sm-12 col-12">
+										<div class="list-movie">
+											<div class="movie-top">
+												<img
+													src="./assets/images/movie1.jpg"
+													alt=""
+													class="movie-top__img"
+												/>
+												<div class="movie-top-content">
+													<span class="">1</span>
+													<div>
+														<h4
+															class="
+																movie-top-content__name
+															"
+														>
+															The Hurricane Heist
+														</h4>
+														<span
+															class="
+																movie-top-content__time
+															"
+														>
+															May 6, 2017
+														</span>
+													</div>
+
+													<div
+														class="
+															movie-new-header__point
+															rating-point
+														"
+													>
+														8.0
+													</div>
+												</div>
+											</div>
+											<div class="movie-top">
+												<img
+													src="./assets/images/movie2.jpg"
+													alt=""
+													class="movie-top__img"
+												/>
+												<div class="movie-top-content">
+													<span class="">2</span>
+													<div>
+														<h4
+															class="
+																movie-top-content__name
+															"
+														>
+															Jumanji: Welcome To
+															The Jungle
+														</h4>
+														<span
+															class="
+																movie-top-content__time
+															"
+														>
+															May 6, 2017
+														</span>
+													</div>
+													<div
+														class="
+															movie-new-header__point
+															rating-point
+														"
+													>
+														8.0
+													</div>
+												</div>
+											</div>
+											<div class="movie-top">
+												<img
+													src="./assets/images/movie3.jpg"
+													alt=""
+													class="movie-top__img"
+												/>
+												<div class="movie-top-content">
+													<span class="">3</span>
+													<div>
+														<h4
+															class="
+																movie-top-content__name
+															"
+														>
+															Death Wish
+														</h4>
+														<span
+															class="
+																movie-top-content__time
+															"
+														>
+															May 6, 2017
+														</span>
+													</div>
+													<div
+														class="
+															movie-new-header__point
+															rating-point
+														"
+													>
+														8.0
+													</div>
+												</div>
+											</div>
+											<div class="movie-top">
+												<img
+													src="./assets/images/movie4.jpg"
+													alt=""
+													class="movie-top__img"
+												/>
+												<div class="movie-top-content">
+													<span class="">4</span>
+													<div>
+														<h4
+															class="
+																movie-top-content__name
+															"
+														>
+															Supersonic
+														</h4>
+														<span
+															class="
+																movie-top-content__time
+															"
+														>
+															May 6, 2017
+														</span>
+													</div>
+													<div
+														class="
+															movie-new-header__point
+															rating-point
+														"
+													>
+														8.0
+													</div>
+												</div>
+											</div>
+											<div class="movie-top">
+												<img
+													src="./assets/images/movie1.jpg"
+													alt=""
+													class="movie-top__img"
+												/>
+												<div class="movie-top-content">
+													<span class="">1</span>
+													<div>
+														<h4
+															class="
+																movie-top-content__name
+															"
+														>
+															The Hurricane Heist
+														</h4>
+														<span
+															class="
+																movie-top-content__time
+															"
+														>
+															May 6, 2017
+														</span>
+													</div>
+													<div
+														class="
+															movie-new-header__point
+															rating-point
+														"
+													>
+														8.0
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="xl-8 lg-7 md-12 sm-12 col-12">
+										<div class="play-video">
+											<div class="play-video-left">
+												<div
+													class="
+														play-video-left__title
+													"
+												>
+													VIDEO PLAY
+												</div>
+												<div
+													class="play-video-left__des"
+												>
+													BY MOVIAK
+												</div>
+											</div>
+											<i
+												class="
+													play-video__icon
+													fas
+													fa-play-circle
+												"
+											></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- banner -->
+			<div class="banner-movie">
+				<img
+					src="./assets/images/slide1.jpg"
+					alt=""
+					class="banner-movie__img"
+				/>
+				<img
+					src="./assets/images/banner1.jpg"
+					alt=""
+					class="banner-movie__img"
+				/>
+				<img
+					src="./assets/images/banner2.jpg"
+					alt=""
+					class="banner-movie__img"
+				/>
+			</div>
+
+			<!-- You Might Also Like -->
+			<div class="header-movie">
+				<div class="header-movie__border"></div>
+				<h2 class="header-movie__title">
+					You Might Also <span>Like</span>
+				</h2>
+				<div class="header-movie__border"></div>
+			</div>
+			<p class="header-movie__des">
+				This is a great space to write long text about your company!
+			</p>
+
+			<div class="container">
+				<div class="row-movie-post">
+					<div class="row">
+						<div class="xl-4 lg-4 md-6 sm-6">
+							<div class="box-movie">
+								<div class="box-movie-header">
+									<img
+										src="./assets/images/movie-post1.jpg"
+										alt=""
+										class="box-movie-header__img"
+									/>
+									<div class="box-movie-info">
+										<div class="box-movie-info__num">
+											<span>03 </span><span>APR</span>
+										</div>
+										<h2 class="box-movie-info__title">
+											<a href="">
+												Doctor Strange assembles with
+												the Avengers
+											</a>
+										</h2>
+									</div>
+								</div>
+								<div class="box-movie-body">
+									<div class="box-movie-left">
+										<span class="box-movie-left__cate"
+											>Uncategorized</span
+										>
+										<div class="box-movie-left__cmt">
+											<i class="fas fa-comments"></i>
+											1
+										</div>
+									</div>
+									<div class="box-movie-right">
+										<p>
+											Sed ut perspiciatis unde omnis iste
+											natus error sit voluptatem
+											accusantium doloremque laudantium,
+											totam rem aperiam, eaque ipsa quae
+											ab illo inventore veritatis et quasi
+											architecto
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="xl-4 lg-4 md-0 sm-0">
+							<div class="box-movie box-movie-center">
+								<div class="box-movie-header">
+									<img
+										src="./assets/images/movie-post3.jpg"
+										alt=""
+										class="box-movie-header__img"
+									/>
+									<div
+										class="box-movie-info movie-hightlight"
+									>
+										<span class="box-movie-left__cate"
+											>Uncategorized</span
+										>
+										<h2 class="box-movie-info__title">
+											<a href="">
+												Doctor Strange assembles with
+												the Avengers
+											</a>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="xl-4 lg-4 md-6 sm-6">
+							<div class="box-movie">
+								<div class="box-movie-header">
+									<img
+										src="./assets/images/movie-post2.jpg"
+										alt=""
+										class="box-movie-header__img"
+									/>
+									<div class="box-movie-info">
+										<div class="box-movie-info__num">
+											<span>03 </span><span>APR</span>
+										</div>
+										<h2 class="box-movie-info__title">
+											<a href="">
+												Doctor Strange assembles with
+												the Avengers
+											</a>
+										</h2>
+									</div>
+								</div>
+								<div class="box-movie-body">
+									<div class="box-movie-left">
+										<span class="box-movie-left__cate"
+											>Uncategorized</span
+										>
+										<div class="box-movie-left__cmt">
+											<i class="fas fa-comments"></i>
+											1
+										</div>
+									</div>
+									<div class="box-movie-right">
+										<p>
+											Sed ut perspiciatis unde omnis iste
+											natus error sit voluptatem
+											accusantium doloremque laudantium,
+											totam rem aperiam, eaque ipsa quae
+											ab illo inventore veritatis et quasi
+											architecto
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="bg-footer">
+				<div class="container">
+					<div class="row-footer">
+						<div class="row">
+							<div class="xl-3 lg-3 md-12 sm-12 col-12">
+								<div class="box-footer">
+									<img
+										src="./assets/images/logo-white.png"
+										alt=""
+										class="box-footer__logo"
+									/>
+									<p class="box-footer__des">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea commodo consequat
+									</p>
+
+									<ul class="social-footer">
+										<li class="social-item">
+											<a
+												href=""
+												class="social-item__link"
+											>
+												<i
+													class="fab fa-facebook-f"
+												></i>
+											</a>
+										</li>
+										<li class="social-item">
+											<a
+												href=""
+												class="social-item__link"
+											>
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="xl-3 lg-3 md-0 sm-0 col-0"></div>
+							<div class="xl-3 lg-3 md-6 sm-6 col-12">
+								<div class="footer-info">
+									<h2 class="footer-info__title">
+										Recent Posts
+									</h2>
+
+									<div class="footer-info-top">
+										<a href="" class="footer-info__link"
+											>Doctor Strange assembles with the
+											Avengers</a
+										>
+										<div class="footer-info__time">
+											April 3, 2019
+										</div>
+									</div>
+									<div class="footer-info-bottom">
+										<a href="" class="footer-info__link"
+											>5 movies to watch this week (29 Sep
+											2016)</a
+										>
+										<div class="footer-info__time">
+											April 3, 2019
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="xl-3 lg-3 md-6 sm-6 col-12">
+								<div class="footer-info">
+									<h2 class="footer-info__title">
+										Contact Us
+									</h2>
+									<div class="footer-info__contact">
+										<i class="fas fa-location-arrow"></i>
+										9067 Zurich, Switzerland 87
+									</div>
+									<div class="footer-info__contact">
+										<i class="far fa-envelope"></i>
+										abc@gmail.com
+									</div>
+									<div class="footer-info__contact">
+										<i class="fas fa-phone-alt"></i>
+										<span>039-457-0202</span>
+									</div>
+
+									<form action="" class="form-contact">
+										<div class="group-contact">
+											<input
+												type="text"
+												class="group-contact__input"
+												placeholder="Email"
+											/>
+											<button>
+												<i
+													class="far fa-paper-plane"
+												></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="end-footer">
+				<div class="container">
+					<div class="end-footer-group">
+						<span> ©copyright 2016 Movie </span>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Top rated</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="./assets/js/main.js"></script>
+</html>

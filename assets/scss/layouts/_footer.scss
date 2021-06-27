@@ -1,0 +1,187 @@
+.footer {
+	background-color: black;
+	.bg-footer {
+		background-image: url("./../images/bg-footer.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 51.5rem;
+
+		@include pc {
+			height: 48rem;
+		}
+
+		@include mobile-less {
+			height: auto;
+		}
+
+		.row-footer {
+			padding-top: 8rem;
+
+			@include tablet {
+				padding-top: 4rem;
+			}
+
+			.box-footer {
+				&__logo {
+					width: 15.5rem;
+					height: 5.1rem;
+					margin-bottom: 1.5rem;
+				}
+
+				&__des {
+					color: $aaa-color;
+					font-size: 1.5rem;
+					line-height: 2.3rem;
+				}
+
+				.social-footer {
+					display: flex;
+					margin-top: 3rem;
+
+					@include tablet {
+						margin-top: 2rem;
+					}
+
+					.social-item + .social-item {
+						margin-left: 5px;
+					}
+
+					.social-item__link {
+						display: block;
+						@include box(4rem, 4rem);
+						text-align: center;
+						line-height: 4rem;
+						font-size: 1.4rem;
+						border-radius: 100%;
+						background-color: $footer-color;
+						color: $white-color;
+						transition: background-color ease 0.3s;
+
+						&:hover {
+							background-color: $main-color;
+						}
+					}
+				}
+			}
+
+			.footer-info {
+				color: $aaa-color;
+
+				&__title {
+					font-size: 2.5rem;
+					color: $white-color;
+					margin-bottom: 3rem;
+
+					@include tablet {
+						margin-top: 1.5rem;
+					}
+				}
+
+				.footer-info__link {
+					color: $aaa-color;
+					font-size: 1.5rem;
+					line-height: 2.3rem;
+
+					&:hover {
+						color: $main-color;
+					}
+				}
+
+				.footer-info__time {
+					font-size: 1.3rem;
+				}
+
+				.footer-info-bottom {
+					margin-top: 3.5rem;
+
+					@include tablet {
+						margin-top: 2rem;
+					}
+				}
+
+				.footer-info__contact + .footer-info__contact {
+					margin-top: 1.5rem;
+				}
+				.footer-info__contact {
+					font-size: 1.5rem;
+					i {
+						font-size: 1.3rem;
+						margin-right: 1rem;
+					}
+					span {
+						color: $main-color;
+					}
+				}
+
+				.form-contact {
+					margin-top: 3rem;
+					width: 100%;
+
+					@include mobile-less {
+						margin-bottom: 2rem;
+					}
+
+					.group-contact {
+						display: flex;
+						position: relative;
+
+						&__input {
+							width: 100%;
+							background-color: rgba(185, 185, 185, 0.3);
+							padding: 1.3rem 4rem 1.3rem 2rem;
+							color: $white-color;
+							font-size: 1.4rem;
+						}
+
+						button {
+							cursor: pointer;
+							color: $aaa-color;
+							i {
+								@include position("vertical");
+								right: 1rem;
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+
+				@include tablet {
+					margin-top: 3rem;
+				}
+			}
+		}
+	}
+
+	.end-footer {
+		height: 8rem;
+		line-height: 8rem;
+
+		.end-footer-group {
+			display: flex;
+			justify-content: space-between;
+			span {
+				color: #666;
+				font-size: 1.5rem;
+			}
+
+			ul {
+				display: flex;
+				li + li {
+					margin-left: 1rem;
+				}
+				a {
+					color: #666;
+					font-size: 1.5rem;
+
+					&:hover {
+						color: $main-color;
+					}
+				}
+
+				@include mobile-less {
+					display: none;
+				}
+			}
+		}
+	}
+}

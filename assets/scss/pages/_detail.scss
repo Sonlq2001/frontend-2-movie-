@@ -1,0 +1,363 @@
+.mv-detail-main {
+	margin: 5rem 0 8rem 0;
+	@include mobile-less {
+		margin: 2rem 0 4rem 0;
+	}
+
+	// title common
+	.mv-detail-title {
+		font-size: 3.5rem;
+		line-height: 3.5rem;
+		color: $main-color;
+		margin-bottom: 2.5rem;
+	}
+
+	.mv-detail {
+		display: flex;
+
+		@include mobile-less {
+			flex-direction: column;
+		}
+
+		&-left {
+			@include box(20.4rem, 35rem);
+			margin-right: 3rem;
+
+			&__img {
+				@include box(100%, 100%);
+			}
+
+			@include mobile {
+				@include box(26.4rem, 100%);
+			}
+
+			@include mobile-less {
+				@include box(100%, 100%);
+				margin-right: 0;
+				text-align: center;
+
+				img {
+					@include box(20.4rem, 35rem);
+				}
+			}
+		}
+
+		&-right {
+			flex-grow: 1;
+			margin-top: 5px;
+
+			@include mobile-less {
+				margin-top: 1.5rem;
+			}
+
+			.mv-name {
+				font-size: 2.8rem;
+				line-height: 3.1rem;
+				display: inline-block;
+
+				&:hover {
+					color: $main-color;
+				}
+			}
+
+			.mv-time {
+				font: {
+					size: 1.3rem;
+					weight: 700;
+				}
+				color: $main-color;
+				display: block;
+				margin: 1rem 0 3rem 1.5rem;
+
+				@include mobile-less {
+					margin: 1rem 0;
+				}
+			}
+
+			.mv-group-info {
+				font-size: 1.5rem;
+
+				.mv-info {
+					line-height: 2.6rem;
+					&__label {
+						font-weight: 700;
+						display: inline-block;
+						width: 9rem;
+					}
+
+					&__txt {
+						color: $txt-666-color;
+					}
+				}
+			}
+
+			.mv-group-vote {
+				margin-top: 4rem;
+				border-top: 1px solid $eee-color;
+				padding-top: 1rem;
+				display: flex;
+
+				.group-vote__star {
+					font-size: 1.3rem;
+					color: $ddd-color;
+					margin: 1rem 0 5px 0;
+					&:hover {
+						color: $yellow-color;
+					}
+				}
+
+				.group-vote__total {
+					font-size: 1.4rem;
+					color: $txt-666-color;
+				}
+
+				&__point {
+					margin-left: 3rem;
+					@include box(4.5rem, 4.5rem);
+					border-radius: 100%;
+					background-color: $yellow-color;
+					color: $white-color;
+					text-align: center;
+					line-height: 4.5rem;
+					font-size: 1.5rem;
+					font-weight: 700;
+					margin-bottom: 2rem;
+				}
+
+				.mv-group-share {
+					flex-grow: 1;
+					display: flex;
+					justify-content: flex-end;
+					margin-top: 1.5rem;
+
+					&__title {
+						font: {
+							size: 1.5rem;
+							weight: 700;
+						}
+						margin-right: 1rem;
+					}
+
+					.social-share {
+						display: flex;
+
+						.social-share__item + .social-share__item {
+							margin-left: 1rem;
+						}
+
+						a {
+							color: $aaa-color;
+							font-size: 1.2rem;
+							&:hover {
+								color: $main-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.mv-des {
+		margin-top: 4.5rem;
+
+		@include mobile-less {
+			margin-top: 3rem;
+		}
+
+		&__para {
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+			color: $txt-666-color;
+		}
+
+		.mv-des__para + .mv-des__para {
+			margin-top: 1rem;
+		}
+	}
+
+	.mv-media {
+		margin-top: 3.5rem;
+
+		.mv-media-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			@include mobile-less {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			&__title {
+				margin-bottom: 0;
+			}
+
+			.mv-media-group {
+				display: flex;
+				font-size: 1.3rem;
+				color: $aaa-color;
+
+				.mv-media-total + .mv-media-total {
+					margin-left: 1rem;
+				}
+
+				.mv-media-total {
+					padding: 4px 15px;
+					border: 1px solid $aaa-color;
+					border-radius: 2rem;
+				}
+
+				@include mobile-less {
+					margin-top: 1rem;
+				}
+			}
+		}
+
+		.mv-media-body {
+			margin-top: 3rem;
+
+			// config slick
+			.slick-slide img {
+				height: 12.2rem;
+			}
+
+			.slick-list {
+				position: relative;
+				margin: 0 -1rem;
+			}
+
+			.slick-slide {
+				padding: 0 1rem;
+			}
+
+			.slick-arrow {
+				position: absolute;
+				@include position("vertical");
+				font-size: 1.5rem;
+				color: $aaa-color;
+				@include box(3rem, 3rem);
+				line-height: 3rem;
+				background-color: rgba(0, 0, 0, 0.5);
+				cursor: pointer;
+				text-align: center;
+			}
+
+			.slick-prev {
+				z-index: 10;
+			}
+
+			.slick-next {
+				right: 0;
+			}
+		}
+	}
+
+	.mv-season {
+		margin-top: 3.5rem;
+
+		.season-part {
+			background-color: #f8f8f8;
+			display: flex;
+			width: 100%;
+			height: 5.8rem;
+			line-height: 5.8rem;
+			align-items: center;
+			font-size: 1.4rem;
+
+			&__num {
+				@include box(15%, 100%);
+				text-align: center;
+				border-right: 2px solid $white-color;
+			}
+
+			&__content {
+				width: calc(100% - 14%);
+				padding-left: 3rem;
+
+				a:hover {
+					color: $main-color;
+				}
+			}
+		}
+
+		.season-part + .season-part {
+			border-top: 2px solid $white-color;
+		}
+	}
+
+	// detail left
+	.recent-post {
+		@include tablet {
+			margin-top: 3.5rem;
+		}
+
+		&__title {
+			font-size: 2.8rem;
+			line-height: 3.1rem;
+			color: $main-color;
+			margin-bottom: 3rem;
+		}
+
+		.group-post {
+			margin-bottom: 5rem;
+
+			@include mobile-less {
+				margin-bottom: 3rem;
+			}
+
+			.post {
+				display: flex;
+
+				&__img {
+					@include box(12.1rem, 8.6rem);
+					margin-right: 1.5rem;
+					object-fit: cover;
+				}
+
+				.post-content {
+					&__title {
+						font: {
+							size: 1.7rem;
+							weight: 700;
+						}
+						line-height: 2.3rem;
+						transition: linear 0.2s;
+
+						&:hover {
+							color: $main-color;
+						}
+					}
+
+					&__time {
+						display: block;
+						font-size: 1.3rem;
+						color: $aaa-color;
+						margin-top: 1rem;
+
+						@include mobile-less {
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			.post + .post {
+				margin-top: 3rem;
+			}
+		}
+
+		.img-ads {
+			@include box(100%, 29rem);
+
+			@include pc {
+				height: 24rem;
+			}
+
+			@include tablet {
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
+}

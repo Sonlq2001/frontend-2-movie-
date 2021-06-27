@@ -1,0 +1,119 @@
+.main-slide {
+	position: relative;
+	margin-bottom: 3.5rem;
+	.group-slide {
+		&__img {
+			@include mobile-less {
+				height: 17rem;
+			}
+		}
+		.slide-content {
+			animation: fadeSlide 0.3s linear;
+		}
+
+		@keyframes fadeSlide {
+			from {
+				opacity: 0.5;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		.slide-title {
+			position: absolute;
+			left: 10%;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&__name {
+				font: {
+					size: 5rem;
+					weight: 700;
+				}
+				text-transform: uppercase;
+				color: $main-color;
+				span {
+					color: $white-color;
+					transition: color 0.3s;
+				}
+				&:hover span {
+					color: $main-color;
+				}
+
+				@include mobile {
+					font-size: 3.7rem;
+				}
+			}
+
+			&__des {
+				color: $white-color;
+				font-size: 1.6rem;
+				margin-top: 1rem;
+				text-shadow: 1px 0px $aaa-color;
+
+				@include pc {
+					width: 50rem;
+					line-height: 2rem;
+				}
+
+				@include mobile-less {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.slide-control {
+		.icon-slide {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 2.5rem;
+			color: $white-color;
+			cursor: pointer;
+			transition: 0.3s;
+
+			&:hover {
+				color: $main-color;
+			}
+		}
+
+		&__prev {
+			left: 1rem;
+		}
+		&__next {
+			right: 1rem;
+		}
+	}
+
+	.slide-position {
+		position: absolute;
+		left: 2rem;
+		bottom: 2rem;
+		display: flex;
+		align-items: center;
+
+		&__item {
+			@include box(3rem, 3rem);
+			text-align: center;
+			line-height: 3rem;
+			background-color: $black-color;
+			color: $white-color;
+			font-size: 1.5rem;
+			border-radius: 100%;
+		}
+
+		.slide-position__item + .slide-position__item {
+			margin-left: 1rem;
+		}
+
+		&__item.active {
+			background-color: $main-color;
+		}
+
+		@include tablet {
+			@include position("horizontal");
+		}
+	}
+}

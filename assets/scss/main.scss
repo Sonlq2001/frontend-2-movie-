@@ -1,0 +1,21 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/reset";
+
+// layout
+@import "./layouts/header";
+@import "./layouts/footer";
+
+// components
+@import "./components/slide";
+@import "./components/header-movie";
+@import "./components/movie";
+
+// pages
+@import "./pages/home";
+@import "./pages/detail";
+@import "./pages/list-movie";
+@import "./pages/actor";

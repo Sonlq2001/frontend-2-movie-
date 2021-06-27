@@ -1,0 +1,265 @@
+.movie-new-header {
+	position: relative;
+	display: block;
+
+	&__img {
+		@include tablet {
+			height: 28rem;
+		}
+
+		@include mobile {
+			height: 25rem;
+		}
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(206, 105, 11, 0.3);
+		transform: scale(0);
+		transition: transform linear 0.25s;
+	}
+
+	&__point {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+		@include box(4rem, 4rem);
+		line-height: 4rem;
+		text-align: center;
+		background-color: $main-color;
+		border-radius: 100%;
+		color: $white-color;
+		z-index: 50;
+		font: {
+			size: 1.5rem;
+			weight: 700;
+		}
+	}
+
+	&__play,
+	.play-movie-hot {
+		@include position("center");
+		font-size: 5rem;
+		opacity: 0;
+		color: $white-color;
+		transition: opacity linear 0.25s;
+	}
+
+	// info movie
+	.info-movie {
+		@include position("vertical");
+		right: -193.5%;
+		width: 37rem;
+		height: 95%;
+		background-color: $black-color;
+		padding: 2rem 2rem 3rem 5rem;
+		visibility: hidden;
+		transition-delay: 0.3s;
+		z-index: 100;
+
+		&::after {
+			content: "";
+			@include position("vertical");
+			left: -2.2rem;
+			border-top: 1.5rem solid transparent;
+			border-right: 1.5rem solid $black-color;
+			border-bottom: 1.5rem solid transparent;
+			border-left: 1rem solid transparent;
+		}
+
+		.info-movie-header {
+			&__title {
+				font-size: 2rem;
+				color: $white-color;
+			}
+
+			.info-movie-vote {
+				display: flex;
+				margin-top: 1rem;
+				&__star {
+					color: $main-color;
+					font-size: 1.3rem;
+
+					.icon-vote:nth-child(5) {
+						color: $aaa-color;
+					}
+				}
+
+				&__total {
+					color: rgb(145, 145, 145);
+					margin-left: 1rem;
+					font-size: 1.2rem;
+				}
+			}
+
+			&__time {
+				margin-top: 1.5rem;
+				color: $main-color;
+				font-size: 1.3rem;
+
+				@include mobile-less {
+					margin: 2rem 0;
+				}
+			}
+		}
+
+		.info-movie-body {
+			color: rgb(122, 122, 122);
+			font-size: 1.3rem;
+			line-height: 2rem;
+
+			@include mobile-less {
+				display: none;
+			}
+
+			&__des {
+				margin: 2rem 0 1rem 0;
+			}
+
+			.info-common {
+				&__content {
+					color: $white-color;
+				}
+			}
+		}
+
+		.info-movie-footer {
+			display: flex;
+			align-items: center;
+			margin-top: 2rem;
+
+			&__link {
+				color: rgb(122, 122, 122);
+				font-size: 1.3rem;
+
+				&:hover {
+					color: $main-color;
+				}
+
+				i {
+					color: $main-color;
+					font-size: 2rem;
+					margin-right: 5px;
+					position: relative;
+					top: 3px;
+				}
+			}
+
+			.info-movie-footer__link + .info-movie-footer__link {
+				margin-left: 3rem;
+
+				@include mobile-less {
+					margin-left: 0;
+				}
+			}
+
+			@include mobile {
+				display: none;
+			}
+
+			@include mobile-less {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				margin-top: 2rem;
+			}
+		}
+
+		.point-info {
+			@include box(4.5rem, 4.5rem);
+			line-height: 4.5rem;
+			top: 4rem;
+			right: 3rem;
+		}
+
+		@include pc {
+			width: 34rem;
+			height: auto;
+			padding: 1.5rem 1.5rem 1rem 3rem;
+			right: -217%;
+		}
+
+		@include tablet {
+			display: none;
+		}
+	}
+
+	// hover
+	&:hover::after {
+		transform: scale(1);
+	}
+
+	&:hover .movie-new-header__play {
+		opacity: 0.7;
+	}
+
+	&:hover .info-movie {
+		visibility: visible;
+	}
+}
+
+.movie-new-body {
+	margin-top: 1.5rem;
+	&__title {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+	&__time {
+		color: $aaa-color;
+		font-size: 1.2rem;
+	}
+}
+
+.row-movie .xl-2-5:nth-child(4) .movie-new .movie-new-header .info-movie {
+	left: -193.5%;
+
+	@include pc {
+		left: -216.5%;
+	}
+}
+
+.row-movie
+	.xl-2-5:nth-child(4)
+	.movie-new
+	.movie-new-header
+	.info-movie::after {
+	left: 37rem;
+	border-top: 1.5rem solid transparent;
+	border-left: 1.5rem solid #202020;
+	border-bottom: 1.5rem solid transparent;
+	border-right: 1rem solid transparent;
+
+	@include pc {
+		left: 34rem;
+	}
+}
+
+.row-movie .xl-2-5:nth-child(5) .movie-new .movie-new-header .info-movie {
+	left: -193.5%;
+
+	@include pc {
+		left: -216.5%;
+	}
+}
+
+.row-movie
+	.xl-2-5:nth-child(5)
+	.movie-new
+	.movie-new-header
+	.info-movie::after {
+	left: 37rem;
+	border-top: 1.5rem solid transparent;
+	border-left: 1.5rem solid #202020;
+	border-bottom: 1.5rem solid transparent;
+	border-right: 1rem solid transparent;
+
+	@include pc {
+		left: 34rem;
+	}
+}

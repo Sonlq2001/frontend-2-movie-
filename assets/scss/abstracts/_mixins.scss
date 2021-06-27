@@ -1,0 +1,65 @@
+// flex box
+
+@mixin flex-center-horizontal {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin flex-center-vertical {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-free-horizontal($value: center) {
+	display: flex;
+	justify-content: $value;
+}
+
+// width, height
+@mixin box($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin position($value) {
+	@if ($value == "center") {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if ($value == "vertical") {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	} @else if($value == "horizontal") {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+// responsive
+
+@mixin mobile-less {
+	@media (max-width: 575.98px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 767.98px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 991.98px) {
+		@content;
+	}
+}
+
+@mixin pc {
+	@media (max-width: 1199.98px) {
+		@content;
+	}
+}
